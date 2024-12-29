@@ -1,0 +1,51 @@
+.contact {
+  background-color: #0099cc;
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  padding: 30px 6vw 30px 6vw;
+  justify-content: space-between;
+}
+
+.contact h1, .contact p {
+  color: white;
+}
+
+.contact h1{
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+  font-size: var(--font-size-title);
+}
+
+.contact p {
+  font-family: "Roboto", serif;
+  font-size: 1.3vw;
+}
+
+.contact_details, .phone_number, .mail, .socials {
+  display: flex;
+} 
+
+.contact_details {
+  flex-direction: column;
+}
+
+.phone_number, .mail, .socials {
+  gap: 15px;
+  padding-bottom: 15px;
+}
+
+.contact_details .address, .contact_details h1+p {
+  padding-bottom: 30px;
+}
+
+.contact_photo {
+  height: 100%;
+  width: auto;
+  box-shadow: var(--box-shadow-standard);
+}
+
+.socials .icon_link {
+  width: 3vw;
+  padding-top: 30px;
+}
