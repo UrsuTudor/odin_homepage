@@ -51,10 +51,12 @@
 }
 
 .attributions {
+  width: 100%;
   background-color: #3a3b3c;
   display: flex;
   flex-direction: column;
-  padding: 30px 6vw 30px 6vw;
+  padding: 10px 6vw 10px 6vw;
+  text-align: center;
 }
 
 .attributions a {

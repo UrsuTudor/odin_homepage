@@ -56,3 +56,16 @@ article {
   font-family: "Roboto", serif;
   font-size: var(--font-size-standard);
 }
+
+@media (max-width: 1200px) {
+  .article_container {
+    grid-template: repeat(3, 32%) / repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .article_container {
+    height: 240vh;
+    grid-template: repeat(6, 16%) / repeat(1, 1fr);
+  }
+}

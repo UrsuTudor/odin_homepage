@@ -1,10 +1,8 @@
 <div class="main_container">
   <header class="author_header">
-    <div class="author_picture">
       <h1>Ashley Williams</h1>
-      <%= image_tag "ashley.jpg", alt: "Ashley" %>
-    </div>
-    <div class="about">
+      <%= image_tag "ashley.jpg", alt: "Ashley", class: "author_picture" %>
+      <div class="white_background"></div>
       <h2>About me</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque dolor asperiores commodi facilis inventore! 
@@ -19,7 +17,6 @@
         <a class="icon_link" href=""><%= image_tag "LI-mark", alt: "Link to the author's LinkedIn page"%></a>
         <a class="icon_link" href=""><%= image_tag "X-mark", alt: "Link to the author's X page"%></a>
       </footer>
-    </div>
   </header>
 
   <main>
@@ -56,13 +53,13 @@
         <a class="icon_link" href=""><%= image_tag "X-mark", alt: "Link to the author's X page"%></a>
       </div>
     </div>
+
     <%= image_tag "ashley-phone", alt: "photo of Ashley talking on the phone in front of her laptop", class: "contact_photo"%>
   </footer>
-</div>
 
-  <footer class="attributions">
+  <div class="attributions">
     <a href="https://www.flaticon.com/free-icons/brands-and-logotypes" title="brands and logotypes icons">Brands and logotypes icons created by Freepik @ Flaticon</a>
     <a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Smashicons @ Flaticon</a> 
     <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik @ Flaticon</a>
-  </footer>
-
+  </div>
+</div>
