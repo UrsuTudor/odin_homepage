@@ -49,3 +49,15 @@
   width: 3vw;
   padding-top: 30px;
 }
+
+.attributions {
+  background-color: #3a3b3c;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 6vw 30px 6vw;
+}
+
+.attributions a {
+  color: #b0b3b8;
+  font-size: var(--font-size-standard);
+}

@@ -25,131 +25,12 @@
   <main>
     <h2 class="article_title">My Work</h2>
     <div class="article_container">
-      <article>
-        <div class="article_image_container">
-          <%= image_tag "forest-road", alt: "photo of a colorful forest" %>
-        </div>
-        <div class="project_details">
-          <header class="project_header">
-            <div class="project_title">
-              <h2>Colorful Forest, Render</h2>
-            </div>
-            <div class="project_links"> 
-              <a class="icon_link" href=""><%= image_tag "github-mark", alt: "Link to the github page of the project"%></a>
-              <a class="icon_link" href=""><%= image_tag "expand-arrows", alt: "Link to project"%></a>
-            </div>
-          </header>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius earum voluptatem aut, possimus numquam provident 
-            quos aliquid sapiente quisquam. Molestiae aliquid veniam commodi dicta modi architecto nulla eligendi culpa. Aspernatur!
-          </p>
-        </div>
-      </article>
-      <article>
-        <div class="article_image_container">
-          <%= image_tag "mountain", alt: "photo of a sharp moutain peak during a bright sunset" %>
-        </div>
-        <div class="project_details">
-          <header class="project_header">
-            <div class="project_title">
-              <h2>Mountain During Sunset, Render</h2>
-            </div>
-            <div class="project_links"> 
-              <a class="icon_link" href=""><%= image_tag "github-mark", alt: "Link to the github page of the project"%></a>
-              <a class="icon_link" href=""><%= image_tag "expand-arrows", alt: "Link to project"%></a>
-            </div>
-        
-          </header>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius earum voluptatem aut, possimus numquam provident 
-            quos aliquid sapiente quisquam. Molestiae aliquid veniam commodi dicta modi architecto nulla eligendi culpa. Aspernatur!
-          </p>
-        </div>
-      </article>
-      <article>
-        <div class="article_image_container">
-          <%= image_tag "fireflies", alt: "photo of a forest at night with colorful fireflies flying around" %>
-        </div>
-        <div class="project_details">
-          <header class="project_header">
-            <div class="project_title">
-              <h2>Fantasy Forest At Night, Render</h2>
-            </div>
-            <div class="project_links"> 
-              <a class="icon_link" href=""><%= image_tag "github-mark", alt: "Link to the github page of the project"%></a>
-              <a class="icon_link" href=""><%= image_tag "expand-arrows", alt: "Link to project"%></a>
-            </div>
-        
-          </header>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius earum voluptatem aut, possimus numquam provident 
-            quos aliquid sapiente quisquam. Molestiae aliquid veniam commodi dicta modi architecto nulla eligendi culpa. Aspernatur!
-          </p>
-        </div>
-      </article>
-      <article>
-        <div class="article_image_container">
-          <%= image_tag "cyberpunk", alt: "photo of a woman's back, looking towards a sprawling cyberpunk city" %>
-        </div>
-        <div class="project_details">
-          <header class="project_header">
-            <div class="project_title">
-              <h2>Cyberpunk, Full Game</h2>
-            </div>
-            <div class="project_links"> 
-              <a class="icon_link" href=""><%= image_tag "github-mark", alt: "Link to the github page of the project"%></a>
-              <a class="icon_link" href=""><%= image_tag "expand-arrows", alt: "Link to project"%></a>
-            </div>
-        
-          </header>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius earum voluptatem aut, possimus numquam provident 
-            quos aliquid sapiente quisquam. Molestiae aliquid veniam commodi dicta modi architecto nulla eligendi culpa. Aspernatur!
-          </p>
-        </div>
-      </article>
-      <article>
-        <div class="article_image_container">
-          <%= image_tag "planets", alt: "photo of an alien world with many planets visible in the sky" %>
-        </div>
-        <div class="project_details">
-          <header class="project_header">
-            <div class="project_title">
-              <h2>Universe Simulator, in Progress</h2>
-            </div>
-            <div class="project_links"> 
-              <a class="icon_link" href=""><%= image_tag "github-mark", alt: "Link to the github page of the project"%></a>
-              <a class="icon_link" href=""><%= image_tag "expand-arrows", alt: "Link to project"%></a>
-            </div>
-        
-          </header>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius earum voluptatem aut, possimus numquam provident 
-            quos aliquid sapiente quisquam. Molestiae aliquid veniam commodi dicta modi architecto nulla eligendi culpa. Aspernatur!
-          </p>
-        </div>
-      </article>
-      <article>
-        <div class="article_image_container">
-          <%= image_tag "dark-souls", alt: "photo of a knight facing a dark castle in a swampy land"%>
-        </div>
-        <div class="project_details">
-          <header class="project_header">
-            <div class="project_title">
-              <h2>Soulslike, Game in Progress</h2>
-            </div>
-            <div class="project_links"> 
-              <a class="icon_link" href=""><%= image_tag "github-mark", alt: "Link to the github page of the project"%></a>
-              <a class="icon_link" href=""><%= image_tag "expand-arrows", alt: "Link to project"%></a>
-            </div>
-        
-          </header>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius earum voluptatem aut, possimus numquam provident 
-            quos aliquid sapiente quisquam. Molestiae aliquid veniam commodi dicta modi architecto nulla eligendi culpa. Aspernatur!
-          </p>
-        </div>
-      </article>
+      <%= render "article", image: "forest-road", alt_text: "photo of a colorful forest", project_title: "Colorful Forest, Render" %>
+      <%= render "article", image: "mountain", alt_text: "photo of a sharp moutain peak during a bright sunset", project_title: "Mountain During Sunset, Render" %>
+      <%= render "article", image: "fireflies", alt_text: "photo of a forest at night with colorful fireflies flying around", project_title: "Fantasy Forest At Night, Render" %>
+      <%= render "article", image: "cyberpunk", alt_text: "photo of a woman's back, looking towards a sprawling cyberpunk city", project_title: "Cyberpunk, Full Game" %>
+      <%= render "article", image: "planets", alt_text: "photo of an alien world with many planets visible in the sky", project_title: "Universe Simulator, in Progress" %>
+      <%= render "article", image: "dark-souls", alt_text: "photo of a knight facing a dark castle in a swampy land", project_title: "Soulslike, Game in Progress" %>
     </div>
   </main>
 
@@ -179,9 +60,9 @@
   </footer>
 </div>
 
-  <footer>
-    <a href="https://www.flaticon.com/free-icons/brands-and-logotypes" title="brands and logotypes icons">Brands and logotypes icons created by Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Smashicons - Flaticon</a>
-    <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>
+  <footer class="attributions">
+    <a href="https://www.flaticon.com/free-icons/brands-and-logotypes" title="brands and logotypes icons">Brands and logotypes icons created by Freepik @ Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Smashicons @ Flaticon</a> 
+    <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik @ Flaticon</a>
   </footer>
 
