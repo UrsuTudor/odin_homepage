@@ -98,17 +98,19 @@
 @media (max-width: 1200px) {
   .author_header {
     display:block;
-    padding: 0px 6vw 30px 3vw;;
+    padding: 0px 6vw 30px 3vw;
+    height: max(500px, 65vw);
   }
 
   .author_header::before {
     margin: -30px -0px 125px -3vw;
+    height: 50vw;
   }
 
   .author_picture {
     float: left;
     width: 50%;
-    height: 40%;
+    height: max(250px, 40%);
     margin: 4vh 2vw 0px 0px;
   }
 
@@ -121,7 +123,7 @@
 
   .white_background {
     position: absolute;
-    height: 60vh;
+    height: max(400px, 50vw);
     width: 82vw;
     z-index: -1;
     transform: translateX(4vw) translateY(11vh);
