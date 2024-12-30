@@ -1,9 +1,9 @@
 .contact {
   background-color: #0099cc;
   display: flex;
+  padding: 30px 6vw 30px 6vw;
   width: 100%;
   height: 60vh;
-  padding: 30px 6vw 30px 6vw;
   justify-content: space-between;
 }
 
@@ -19,7 +19,7 @@
 
 .contact p {
   font-family: "Roboto", serif;
-  font-size: 1.3vw;
+  font-size: var(--font-size-standard);
 }
 
 .contact_details, .phone_number, .mail, .socials {
@@ -41,12 +41,13 @@
 
 .contact_photo {
   height: 100%;
-  width: auto;
+  min-width: 0;
+  object-fit: cover;
   box-shadow: var(--box-shadow-standard);
 }
 
 .socials .icon_link {
-  width: 3vw;
+  width: clamp(30px, 1.7vw, 30px);
   padding-top: 30px;
 }
 
@@ -62,4 +63,10 @@
 .attributions a {
   color: #b0b3b8;
   font-size: var(--font-size-standard);
+}
+
+@media (max-width: 1200px) {
+  .contact {
+    height: max(400px, 40vh);
+  }
 }
