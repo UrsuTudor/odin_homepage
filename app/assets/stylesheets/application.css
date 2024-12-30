@@ -53,6 +53,6 @@ h1, h2, h3, h4, h5, h6 {
 
 :root {
   --box-shadow-standard: rgba(0, 0, 0, 0.15) 7px 5px 5px;
-  --font-size-standard: clamp(12px, 1vw, 30px);
-  --font-size-title: clamp(18px, 3vw, 45px)
+  --font-size-standard: clamp(16px, 1vw, 30px);
+  --font-size-title: clamp(28px, 3vw, 45px)
 }

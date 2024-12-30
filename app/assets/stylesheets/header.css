@@ -92,9 +92,56 @@
 }
 
 .icon_link {
-  width: 1.7vw;
-  height: 1.7vw;
+  width: clamp(22px, 1.7vw, 30px);
 }
 
 @media (max-width: 1200px) {
+  .author_header {
+    display:block;
+    padding: 0px 6vw 30px 3vw;;
+  }
+
+  .author_header::before {
+    margin: -30px -0px 125px -3vw;
+  }
+
+  .author_picture {
+    float: left;
+    width: 50%;
+    height: 40%;
+    margin: 4vh 2vw 0px 0px;
+  }
+
+  .author_header h1 {
+    position: absolute;
+    left: 44%;
+    margin-top: 6vh;
+    font-size: clamp(28px, 3vh, 45px);
+  }
+
+  .white_background {
+    position: absolute;
+    height: 60vh;
+    width: 82vw;
+    z-index: -1;
+    transform: translateX(4vw) translateY(11vh);
+  }
+  .author_header h2, .author_header p {
+    padding: 0px 7vw 0px 7vw;
+  }
+
+  .author_header footer {
+    visibility: hidden;
+  }
+
+  .author_header h2 {
+    margin-top: 15vh;
+    margin-bottom: 1vh;
+    transform: translateX(10vw);
+    font-weight: default;
+  }
+
+  .author_header p {
+    font-size: var(--font-size-standard);
+  }
 }

@@ -3,6 +3,7 @@ main {
   flex-direction: column;
   padding: 30px 6vw 30px 6vw;
   gap: 20px;
+  width: 100%;
 }
 
 .article_container {
@@ -14,9 +15,13 @@ main {
   position: relative;
 }
 
-.article_title {
-  font-family: "Playfair Display", serif;
-  font-size: 2vw;
+main h2 {
+  font-size: 2.5vw;
+  font-weight: 150;
+}
+
+.article_container > * {
+  min-width: 0; 
 }
 
 article {
@@ -40,6 +45,19 @@ article {
   margin-bottom: 10px;
 }
 
+.project_title {
+  min-width: 0;
+}
+
+.project_title h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  font-weight: bold;
+}
+
 .project_links {
   display: flex;
   justify-content: right;
@@ -49,7 +67,6 @@ article {
 .project_details {
   padding: 10px 20px 20px 20px;
   overflow: hidden;
-  font-size: var(--font-size-standard);
 }
 
 .project_details p {
