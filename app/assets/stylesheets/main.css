@@ -8,7 +8,7 @@ main {
 
 .article_container {
   width: 100%;
-  height: 120vh;
+  height: max(1200px, 120vh);
   display: grid;
   grid-template: repeat(2, 48%) / repeat(3, 1fr);
   gap: 2vw;
@@ -16,7 +16,7 @@ main {
 }
 
 main h2 {
-  font-size: 2.5vw;
+  font-size: var(--font-size-title);
   font-weight: 150;
 }
 
@@ -26,6 +26,7 @@ main h2 {
 
 article {
   box-shadow: var(--box-shadow-standard);
+  min-height: 300px;
 }
 
 .article_image_container {
@@ -51,7 +52,7 @@ article {
 
 .project_title h2 {
   font-family: "Playfair Display", serif;
-  font-size: 1.5vw;
+  font-size: clamp(16px, 3vw, 24px);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; 
@@ -65,13 +66,17 @@ article {
 }
 
 .project_details {
-  padding: 10px 20px 20px 20px;
-  overflow: hidden;
+  padding: 10px 20px 0px 20px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .project_details p {
   font-family: "Roboto", serif;
   font-size: var(--font-size-standard);
+  overflow: hidden;
+  color: 	#606060;
 }
 
 @media (max-width: 1200px) {
