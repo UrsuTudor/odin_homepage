@@ -70,3 +70,23 @@
     height: max(400px, 40vh);
   }
 }
+
+@media (max-width: 600px) {
+  .contact {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+  }
+
+  .contact_details {
+    padding: 10px 6vw 50px 6vw;
+  }
+
+  .contact h1, .socials {
+    align-self: center;
+  }
+
+  .phone_number .icon_link, .mail .icon_link {
+    display: none;
+  }
+}
