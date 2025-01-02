@@ -87,7 +87,12 @@ article {
 
 @media (max-width: 600px) {
   .article_container {
-    height: 240vh;
-    grid-template: repeat(6, 16%) / repeat(1, 1fr);
+    height: auto;
+    grid-template: 1fr / 1fr;
+    gap: 30px;
+  }
+
+  article {
+    height: 300px;
   }
 }
