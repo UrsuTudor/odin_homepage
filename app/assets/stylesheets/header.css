@@ -132,7 +132,7 @@
 
   .white_background {
     position: absolute;
-    height: max(400px, 50vw);
+    height: max(425px, 50vw);
     width: 82vw;
     z-index: -1;
     transform: translateX(4vw) translateY(11vh);
